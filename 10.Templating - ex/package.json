@@ -1,0 +1,14 @@
+{
+  "name": "templating",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handlebars.min.js",
+  "scripts": {
+    "dev": "lite-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lite-server": "^2.5.4"
+  }
+}
