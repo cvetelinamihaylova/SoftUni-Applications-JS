@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Animations&Interceptors Exercise</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+  <link rel="stylesheet" href="notifications.css">
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="./node_modules/sammy/lib/min/sammy-latest.min.js"></script>
+  <script src="./node_modules/handlebars/dist/handlebars.min.js"></script>
+</head>
+
+<body id="main">
+  <nav>
+    <a href="#/">Home</a>
+    <a href="#/profile">Profile</a>
+    <a href="#/create-furniture">Create furniture</a>
+    <!-- <a href="#/furniture-details">Furniture details</a> -->
+  </nav>
+  <div id="container">
+    
+  </div>
+  <div id="notifications">
+    <div id="loadingBox" class="notification">
+      <span>Loading …</span>
+    </div>
+    <div id="infoBox" class="notification">
+      <span>Info</span>
+    </div>
+    <div id="errorBox" class="notification">
+      <span>Error</span>
+    </div>
+  </div>
+
+  <script src="./index.js"></script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCGCYik77W8xzSagh-420eQIhjR-XV98Zk",
+    authDomain: "furniture-3f336.firebaseapp.com",
+    databaseURL: "https://furniture-3f336.firebaseio.com",
+    projectId: "furniture-3f336",
+    storageBucket: "furniture-3f336.appspot.com",
+    messagingSenderId: "982391969449",
+    appId: "1:982391969449:web:620d906f671ce369c33bb8"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+</body>
+
+</html>
