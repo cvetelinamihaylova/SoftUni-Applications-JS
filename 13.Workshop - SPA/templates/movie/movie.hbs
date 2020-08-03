@@ -1,0 +1,15 @@
+<div class="movie">
+    <h2>Title: {{title}}</h2>
+    <img
+        src="{{image}}">
+    <p>Available Tickets: {{availableTickets}}</p>
+    <div class="btn-group">
+        {{#if isAuthor}}
+        <button><a href="#/edit/{{objectId}}">Edit</a></button>
+        <button><a href="#/delete/{{objectId}}">Delete</a></button>
+        {{/if}}
+        <button><a href="#/buy/{{objectId}}">Buy Ticket</a></button>
+        <button><a href="#/details/{{objectId}}">Details</a></button>
+    </div>
+</div>
+

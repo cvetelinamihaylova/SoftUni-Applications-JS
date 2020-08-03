@@ -1,0 +1,20 @@
+{{>header}}
+<div id="cinema">
+    {{#if myMovies}}
+    <h1>My Movies</h1>
+    {{else}}
+    <h1>All Movies</h1>
+    <form action="#/movies" method="GET">
+        <label>Search genre:</label>
+        <input type="text" name="search" value="{{search}}">
+        <input type="submit" value="Search">
+    </form>
+    {{/if}}
+    <div class="movies">
+        {{#each movies}}
+        {{>movie }}
+        {{/each}}
+    </div>
+</div>
+</div>
+{{>footer}}
