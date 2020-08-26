@@ -1,0 +1,44 @@
+{{>header}}
+<div class="content">
+    <section class="js">
+        <h2>JavaScript</h2>
+        <div class="articles">
+            {{#if articlesJs}}
+            {{>articleJsPartial}}
+            {{else}}
+            {{>noArticlesPartial}}
+            {{/if}}
+        </div>
+    </section>
+    <section class="CSharp">
+        <h2>C#</h2>
+        <div class="articles">
+            {{#if articlesCSharp}}
+            {{>articleCSharpPartial}}
+            {{else}}
+            {{>noArticlesPartial}}
+            {{/if}}
+        </div>
+    </section>
+    <section class="Java">
+        <h2>Java</h2>
+        <div class="articles">
+            {{#if articlesJava}}
+            {{>articleJavaPartial}}
+            {{else}}
+            {{>noArticlesPartial}}
+            {{/if}}
+        </div>
+    </section>
+    <section class="Pyton">
+        <h2>Python</h2>
+        <div class="articles">
+            {{#if articlesPython}}
+            {{>articlePythonPartial}}
+            {{else}}
+            {{>noArticlesPartial}}
+            {{/if}}
+        </div>
+    </section>
+</div>
+{{>footer}}

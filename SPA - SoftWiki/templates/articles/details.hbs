@@ -1,0 +1,17 @@
+{{>header}}
+<div class="container details">
+    <div class="details-content">
+        <h2>{{title}}</h2>
+        <strong>{{category}}</strong>
+        <p>{{content}}</p>
+        <div class="buttons">
+            {{#if isAuthor}}
+             <a href="#/delete/{{objectId}}" class="btn delete">Delete</a>
+            <a href="#/edit/{{objectId}}" class="btn edit">Edit</a>
+            {{else}}
+            <a href="#/home" class="btn edit">Back</a>
+            {{/if}}
+        </div>
+    </div>
+</div>
+{{>footer}}
